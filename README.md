@@ -1,8 +1,10 @@
-# Welcome to our [team project website!](https://julioveracruz.github.io/testwebsite/)
+# Welcome to our team project website!
 
 This is a website to showcase our final project for FIN 377 - Data Science for Finance course at Lehigh University.
 
-To see the complete analysis file(s) click [here](https://github.com/julioveracruz/testwebsite/blob/main/notebooks/example.ipynb).
+This project and website was created by Tim DiPalo, Tom Griffith, and Christyan Jean-Charles.
+
+To see the complete project repo, click [here](https://github.com/tdip19/FinalProject).
 
 ## Table of contents
 1. [Introduction](#introduction)
@@ -19,15 +21,19 @@ The main goal of this project is to explore how we can use past data on industry
 
 Why we chose these industries:
 
+**Construction:** This was the inspiration for this project. While exploring topics, Tom stumbled upon this [video](https://www.youtube.com/watch?v=roEljzOKk3I&ab_channel=EPBResearch), detailing how the constuction employment is a significant driver of recessions in the US economy. We originally wanted to explore how different industries drive recessions, but we later decided to switch the angle in which we approached the project, instead researching how economic conditions affect unemployment in different industries. We felt that we should keep the construction industry as a homage to our original inspiration for the project.
 
+**Manufacturing:** As supply chain majors, the manufaturing industy is important to Tim and Tom. Additionally, it is an industry that is very relevant to recent and soon-to-be Lehigh graduates overall.
+
+**Finance:** This one is pretty clear. Since this is a finance class, most of us students are finance majors, and will likely be entering the finance industry soon. Therefore, it is important to understand the potential impact that economic conditions will have on employment rates.
 
 ## Methodology <a name="meth"></a>
 
-We began by gathering data. We were able to find most of the employment data we needed from the Bureau of Labor Statistics and the Bureau of Economic Analysis.
+We began by gathering data. We were able to find most of the employment data we needed from the Bureau of Labor Statistics and the Bureau of Economic Analysis. This was convient because, by getting the data from the same/similar sources, they were all formatted similarly. Therefore, there was minimal work needed to clean the data and prepare it for a merge.
 
-From there, we were able to clean the data so it was ready to merge, then merge it. The merged dataframe can be seen below.
+Then, we were able to complete the minimal cleaning of the data so it was ready to merge, then merge it. The merged dataframe can be seen below.
 
-![](pics/plot1.png)
+![](pics/Merged_df.png)
 <br><br>
 Some analysis here
 
