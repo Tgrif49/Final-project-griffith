@@ -149,18 +149,19 @@ For the manufacturing industry, you can see that there are certain outliers in t
 The scatterplot and the residual plot for the finance industry seem to show actual values that deviate significantly from our predicted values, but by looking at the density plot, you can see that the values are closer to eachother than they seem.
 
 ## About the team <a name="about"></a>
-<img src="pics/IMG_7083 (1).jpg" alt="Tim" width="300"/>
-<br>
-Tim is a junior at Lehigh studying finance and supply chain management.
-<br><br><br>
-<img src="pics/IMG-0006.jpg" alt="Tom" width="300"/>
-<br>
-Tom is a junior at Lehigh studying finance and supply chain management.
-<br><br><br>
-<img src="pics/IMG-3108 (1).jpg" alt="Christyan" width="300"/>
-<br>
-Christyan is a senior at Lehigh studying finance.
 
+<img src="pics/IMG_7083 (1).jpg" alt="Tim" width="300"/>
+<br><br>
+Tim is a junior at Lehigh studying finance and supply chain management.
+<br><br>
+<img src="pics/IMG-0006.jpg" alt="Tom" width="300"/>
+<br><br>
+Tom is a junior at Lehigh studying finance and supply chain management.
+<br><br>
+<img src="pics/IMG-3108 (1).jpg" alt="Christyan" width="300"/>
+<br><br>
+Christyan is a senior at Lehigh studying finance.
+<br><br>
 
 ## More 
 
