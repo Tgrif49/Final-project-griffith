@@ -92,49 +92,47 @@ To visualize the accuracy of machine learning, we used a scatterplot, a density 
 
 ![](pics/scatter_constr.png)
 <br><br>
-Some analysis here
+This plot shows how our predicted values for the unemployment (red) correlate with the actual values in the dataset (blue).
 <br><br>
 ![](pics/density_constr.png)
 <br><br>
-More analysis here.
+This plot overlays our predicted values for the unemployment (orange) with the actual values in the dataset (blue), showing how closely they correlate.
 <br><br>
 ![](pics/residual_constr.png)
 <br><br>
-More analysis.
+This plot shows how far our predicted values for the unemployment deviate from the actual values in the dataset, with the red line representing 0, or no deviation from eachother. This plot is useful because it additionally colors the points by the timeframe, so we can see which timeframes we predicted more accurately than others.
 
 ### Manufacturing <a name="subsec4-2"></a>
 
 ![](pics/scatter_manuf.png)
 <br><br>
-Some analysis here
+This plot shows how our predicted values for the unemployment (red) correlate with the actual values in the dataset (blue).
 <br><br>
 ![](pics/density_manuf.png)
 <br><br>
-More analysis here.
+This plot overlays our predicted values for the unemployment (orange) with the actual values in the dataset (blue), showing how closely they correlate.
 <br><br>
 ![](pics/residual_manuf.png)
 <br><br>
-More analysis.
+This plot shows how far our predicted values for the unemployment deviate from the actual values in the dataset, with the red line representing 0, or no deviation from eachother. This plot is useful because it additionally colors the points by the timeframe, so we can see which timeframes we predicted more accurately than others.
 
 ### Finance <a name="subsec4-3"></a>
 
 ![](pics/scatter_fin.png)
 <br><br>
-Some analysis here
+This plot shows how our predicted values for the unemployment (red) correlate with the actual values in the dataset (blue).
 <br><br>
 ![](pics/density_fin.png)
 <br><br>
-More analysis here.
+This plot overlays our predicted values for the unemployment (orange) with the actual values in the dataset (blue), showing how closely they correlate.
 <br><br>
 ![](pics/residual_fin.png)
 <br><br>
-More analysis.
+This plot shows how far our predicted values for the unemployment deviate from the actual values in the dataset, with the red line representing 0, or no deviation from eachother. This plot is useful because it additionally colors the points by the timeframe, so we can see which timeframes we predicted more accurately than others.
 
 ## Findings and Conclusion <a name="conc"></a>
 
 Blah blah
-
-
 
 ## About the team <a name="about"></a>
 <img src="pics/IMG_7083 (1).jpg" alt="Tim" width="300"/>
