@@ -231,6 +231,41 @@ For the manufacturing industry, you can see that there are certain outliers in t
 
 The scatterplot and the residual plot for the finance industry seem to show actual values that deviate significantly from our predicted values, but by looking at the density plot, you can see that the values are closer to eachother than they seem.
 
+Finally, we created a new dataset with randomly generated values for the S&P500 return, change in GDP, and CPI from 2023 to 2033. I created code that ensured those variables stayed within specified values, and that they somewhat correlated with each other as they do in reality. The code that I used to do this is as follows:
+
+```python
+# random numbers for 10 years
+
+np.random.seed(1234)
+
+# create list of periods
+periods = ['Q01', 'Q02', 'Q03', 'Q04']
+
+# create empty df
+data_random_10 = pd.DataFrame(columns=['Year', 'Period', 'SP500_Return', 'Percent_Change_in_GDP', 'CPI'])
+
+# create columns
+years = np.repeat(np.arange(2023, 2033), 4)
+data_random_10['Year'] = years
+data_random_10['Period'] = periods*10
+
+n_quarters = len(years)
+data_random_10['SP500_Return'] = np.random.uniform(low=-0.18, high=0.21, size=n_quarters)
+data_random_10['Percent_Change_in_GDP'] = np.random.uniform(low=-20, high=25, size=n_quarters)
+data_random_10['CPI'] = np.random.uniform(low=200, high=320, size=n_quarters)
+
+data_random_10['Percent_Change_in_GDP'] = data_random_10['Percent_Change_in_GDP'] * (1 + 0.5*data_random_10['SP500_Return'])
+data_random_10['CPI'] = data_random_10['CPI'] * (1 + 0.3*data_random_10['SP500_Return'])
+
+data_random_10 = data_random_10.round(2)
+data_random_10
+```
+
+Now that I created that dataset, I trained our model that we used before on all of the original dataset, to give it the largest sample size possible. Then, I was able to predict unemployment rates for each industry for these randomly generated variables all the way up to 2033. The dataset with the predicted unemployment rates on the randomized values:
+
+![](pics/random_predictions.png)
+<br><br>
+
 ## About the team <a name="about"></a>
 
 <img src="pics/IMG_7083 (1).jpg" alt="Tim" width="300"/>
