@@ -132,15 +132,21 @@ This plot shows how far our predicted values for the unemployment deviate from t
 
 ## Findings and Conclusion <a name="conc"></a>
 
-R<sup>2</sup> Construction: 0.8545
-R<sup>2</sup> Manufacturing: 0.5891
-R<sup>2</sup> Finance: 0.7938
+**Our final R<sup>2</sup> values are as follows:**
 
 | Industry | R<sup>2</sup> |
 |:--------:|:-------------:|
 | Construction | 0.8545 |
 | Manufacturing | 0.5891 |
 | Finance | 0.7938 |
+
+These values are clear in the plots: 
+
+The construction industry has the highest R<sup>2</sup>, and that can be seen through the close correlation between the actual values and our predicted values.
+
+For the manufacturing industry, you can see that there are certain outliers in the actual data that deviate from our predicted results. This can be seen specifically in the scatterplot and the residual plot.
+
+The scatterplot and the residual plot for the finance industry seem to show actual values that deviate significantly from our predicted values, but by looking at the density plot, you can see that the values are closer to eachother than they seem.
 
 ## About the team <a name="about"></a>
 <img src="pics/IMG_7083 (1).jpg" alt="Tim" width="300"/>
