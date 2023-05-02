@@ -151,15 +151,15 @@ The scatterplot and the residual plot for the finance industry seem to show actu
 ## About the team <a name="about"></a>
 
 <img src="pics/IMG_7083 (1).jpg" alt="Tim" width="300"/>
-<br><br>
+<br>
 Tim is a junior at Lehigh studying finance and supply chain management.
 <br><br>
 <img src="pics/IMG-0006.jpg" alt="Tom" width="300"/>
-<br><br>
+<br>
 Tom is a junior at Lehigh studying finance and supply chain management.
 <br><br>
 <img src="pics/IMG-3108 (1).jpg" alt="Christyan" width="300"/>
-<br><br>
+<br>
 Christyan is a senior at Lehigh studying finance.
 <br><br>
 
