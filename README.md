@@ -90,59 +90,43 @@ To visualize the accuracy of machine learning, we used a scatterplot, a density 
 
 ### Construction <a name="subsec4-1"></a>
 
-![](pics/plot1.png)
+![](pics/scatter_constr.png)
 <br><br>
 Some analysis here
 <br><br>
-![](pics/plot2.png)
+![](pics/density_constr.png)
 <br><br>
 More analysis here.
 <br><br>
-![](pics/plot3.png)
+![](pics/residual_constr.png)
 <br><br>
 More analysis.
 
 ### Manufacturing <a name="subsec4-2"></a>
-This is a subsection, formatted in heading 3 style
 
-![](pics/plot1.png)
+![](pics/scatter_manuf.png)
 <br><br>
 Some analysis here
 <br><br>
-![](pics/plot2.png)
+![](pics/density_manuf.png)
 <br><br>
 More analysis here.
 <br><br>
-![](pics/plot3.png)
+![](pics/residual_manuf.png)
 <br><br>
 More analysis.
 
 ### Finance <a name="subsec4-3"></a>
-This is a subsection, formatted in heading 3 style
 
-![](pics/plot1.png)
+![](pics/scatter_fin.png)
 <br><br>
 Some analysis here
 <br><br>
-![](pics/plot2.png)
+![](pics/density_fin.png)
 <br><br>
 More analysis here.
 <br><br>
-![](pics/plot3.png)
-<br><br>
-More analysis.
-
-Here are some graphs that we created in our analysis. We saved them to the `pics/` subfolder and include them via the usual markdown syntax for pictures.
-
-![](pics/plot1.png)
-<br><br>
-Some analysis here
-<br><br>
-![](pics/plot2.png)
-<br><br>
-More analysis here.
-<br><br>
-![](pics/plot3.png)
+![](pics/residual_fin.png)
 <br><br>
 More analysis.
 
