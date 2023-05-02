@@ -96,13 +96,14 @@ Blah blah
 <img src="pics/IMG_7083 (1).jpg" alt="Tim" width="300"/>
 <br>
 Tim is a junior at Lehigh studying finance and supply chain management.
+<br><br><br>
 <img src="pics/IMG-0006.jpg" alt="Tom" width="300"/>
 <br>
 Tom is a junior at Lehigh studying finance and supply chain management.
 <br><br><br>
-<img src="pics/don2.jpg" alt="Christyan" width="300"/>
+<img src="pics/IMG-3108 (1).jpg" alt="Christyan" width="300"/>
 <br>
-Christyan is a senior at Lehigh studying ______.
+Christyan is a senior at Lehigh studying finance.
 
 
 ## More 
