@@ -132,7 +132,15 @@ This plot shows how far our predicted values for the unemployment deviate from t
 
 ## Findings and Conclusion <a name="conc"></a>
 
-Blah blah
+R<sup>2</sup> Construction: 0.8545
+R<sup>2</sup> Manufacturing: 0.5891
+R<sup>2</sup> Finance: 0.7938
+
+| Industry | R<sup>2</sup> |
+|:--------:|:-------------:|
+| Construction | 0.8545 |
+| Manufacturing | 0.5891 |
+| Finance | 0.7938 |
 
 ## About the team <a name="about"></a>
 <img src="pics/IMG_7083 (1).jpg" alt="Tim" width="300"/>
