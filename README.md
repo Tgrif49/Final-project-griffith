@@ -76,13 +76,96 @@ This is a subsection, formatted in heading 3 style
 This is a subsection, formatted in heading 3 style
 
 ## Machine Learning Analysis <a name="section3"></a>
-Christyan
 
-### Subsection 1 <a name="subsec3-1"></a>
-This is a subsection, formatted in heading 3 style
+To further analyze the relationship on economic indicators to industry unemployment, we employed different methods of machine learning. Our goal was to train a model to most accurately predict a given level of unemployment in an industry based on certain economic conditions. 
 
-### Subsection 2 <a name="subsec3-2"></a>
-This is a subsection, formatted in heading 3 style
+ 
+
+
+### "ML" Method 1: <a name="subsec3-1"></a>
+For our first attempt, we created a model that attempts to place a value based on the line best fit using the three variables. 
+
+```python 
+
+X = recession_df[['SP500_Return', 'Percent_Change_in_GDP', 'CPI']]
+y = recession_df['Construction_Unemployment_Rate']
+
+model = LinearRegression()
+model.fit(X,y)
+
+predictions = model.predict(X) 
+recession_df['Predicted_Construction_Unemployment_Rate'] = predictions
+```
+
+Since this model does not use any learning of test data. It turns out that it is not that accurate. 
+
+| Industry     | R<sup>2</sup>         |
+|--------------|------------|
+| Construction | 0.208536   |
+| Manufacturing        | 0.222904   |
+| Finance          | 0.223606   |
+
+
+### ML Method 2 <a name="subsec3-2"></a> 
+
+
+To create a better model for each industry, we used training and testing samples of 70% and 30% of our dataset. We also included a num and cat transformer into the model as well as did preprocessing. 
+
+The code below shows an example of one of our models that outputs the R<sup>2</sup> score, the industry predictions, and the length of the training data:
+
+```python 
+
+X_train_c, X_test_c, y_train_c, y_test_c = train_test_split(
+    merged.drop('Construction_Unemployment_Rate', axis=1),
+    merged['Construction_Unemployment_Rate'],
+    test_size=0.3,
+    stratify=merged['Year']
+) 
+
+num_transformer = Pipeline(steps=[
+    ('scaler', StandardScaler())
+])
+
+cat_transformer = Pipeline(steps=[
+    ('onehot', OneHotEncoder(handle_unknown='ignore'))
+]) 
+
+#Preprocessor
+preprocessor = ColumnTransformer(transformers=[
+    ('num', num_transformer, ['SP500_Return', 'Percent_Change_in_GDP', 'CPI']),
+    ('cat', cat_transformer, ['Year', 'Period'])
+]) 
+
+#Define the model as a pipeline of the preprocessor/linear regression model
+model_c = Pipeline(steps=[
+    ('preprocessor', preprocessor),
+    ('regressor', LinearRegression())
+]) 
+
+#Train on training data
+model_c.fit(X_train_c, y_train_c)
+
+# Predict on the testing data
+y_pred_c = model_c.predict(X_test_c)
+
+# Evaluate the model
+score_c = model_c.score(X_test_c, y_test_c)
+print(f'R^2 score: {score_c}') 
+
+print(y_pred_c)
+len(X_train_c)
+``` 
+
+This model gave us a much better estimate of unemployment by industry. The highest R<sup>2</sup> was for construction, which supported our intial idea that the construction industry is heavily tied to economic indicators. 
+
+| Industry | R<sup>2</sup> |
+|:--------:|:-------------:|
+| Construction | 0.8545 |
+| Manufacturing | 0.5891 |
+| Finance | 0.7938 |
+
+
+
 
 ## Plots and Visualization <a name="section4"></a>
 
