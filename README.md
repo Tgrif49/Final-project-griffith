@@ -8,18 +8,26 @@ To see the complete project repo, click [here](https://github.com/tdip19/FinalPr
 
 ## Table of contents
 1. [Introduction](#introduction)
+    1. [Industry Choices](#subsec1-1)
 2. [Methodology](#meth)
-3. [Section 2](#section2)
+3. [Section 1](#section2)
     1. [Subsection](#subsec2-1)
     2. [Subsection](#subsec2-2)
-4. [Analysis Section](#section3)
-5. [Summary](#summary)
+4. [Section 1](#section3)
+    1. [Subsection](#subsec3-1)
+    2. [Subsection](#subsec3-2)
+5. [Visualizations and Analysis](#section4)
+    1. [Construction](#subsec4-1)
+    2. [Manufacturing](#subsec4-2)
+    3. [Finance](#subsec4-3)
+6. [Findings and Conclusion](#conc)
+7. [About the Team](#about)
 
 ## Introduction  <a name="introduction"></a>
 
 The main goal of this project is to explore how we can use past data on industry trends and leading indicators to predict future employment and economic trends. We chose to explore this topic because, as we and our peers begin to move into the working world, we believe it is important to understand unemployment as it relates to job security. Especially now with many people predicting a recession, we think it is important to understand the employment trends in popular industries as they relate to economic trends.
 
-### Why we chose these industries:
+### Why we chose these industries: <a name="industries"></a>
 
 **Construction:** This was the inspiration for this project. While exploring topics, Tom stumbled upon this [video](https://www.youtube.com/watch?v=roEljzOKk3I&ab_channel=EPBResearch), detailing how the constuction employment is a significant driver of recessions in the US economy. We originally wanted to explore how different industries drive recessions, but we later decided to switch the angle in which we approached the project, instead researching how economic conditions affect unemployment in different industries. We felt that we should keep the construction industry as a homage to our original inspiration for the project.
 
@@ -67,16 +75,62 @@ This is a subsection, formatted in heading 3 style
 ### Subsection 2 <a name="subsec2-2"></a>
 This is a subsection, formatted in heading 3 style
 
-## Machine Learning Analysis <a name="section2"></a>
+## Machine Learning Analysis <a name="section3"></a>
 Christyan
 
-### Subsection 1 <a name="subsec2-1"></a>
+### Subsection 1 <a name="subsec3-1"></a>
 This is a subsection, formatted in heading 3 style
 
-### Subsection 2 <a name="subsec2-2"></a>
+### Subsection 2 <a name="subsec3-2"></a>
 This is a subsection, formatted in heading 3 style
 
-## Plots and Visualization <a name="section3"></a>
+## Plots and Visualization <a name="section4"></a>
+
+To visualize the accuracy of machine learning, we used a scatterplot, a density plot, and a residual plot. These plots all compare the predicted results from our machine learning model to the actual data from our dataset.
+
+### Construction <a name="subsec4-1"></a>
+
+![](pics/plot1.png)
+<br><br>
+Some analysis here
+<br><br>
+![](pics/plot2.png)
+<br><br>
+More analysis here.
+<br><br>
+![](pics/plot3.png)
+<br><br>
+More analysis.
+
+### Manufacturing <a name="subsec4-2"></a>
+This is a subsection, formatted in heading 3 style
+
+![](pics/plot1.png)
+<br><br>
+Some analysis here
+<br><br>
+![](pics/plot2.png)
+<br><br>
+More analysis here.
+<br><br>
+![](pics/plot3.png)
+<br><br>
+More analysis.
+
+### Finance <a name="subsec4-3"></a>
+This is a subsection, formatted in heading 3 style
+
+![](pics/plot1.png)
+<br><br>
+Some analysis here
+<br><br>
+![](pics/plot2.png)
+<br><br>
+More analysis here.
+<br><br>
+![](pics/plot3.png)
+<br><br>
+More analysis.
 
 Here are some graphs that we created in our analysis. We saved them to the `pics/` subfolder and include them via the usual markdown syntax for pictures.
 
@@ -92,13 +146,13 @@ More analysis here.
 <br><br>
 More analysis.
 
-## Summary of Findings <a name="summary"></a>
+## Findings and Conclusion <a name="conc"></a>
 
 Blah blah
 
 
 
-## About the team
+## About the team <a name="about"></a>
 <img src="pics/IMG_7083 (1).jpg" alt="Tim" width="300"/>
 <br>
 Tim is a junior at Lehigh studying finance and supply chain management.
