@@ -22,6 +22,7 @@ To see the complete project repo, click [here](https://github.com/tdip19/FinalPr
     2. [Manufacturing](#subsec4-2)
     3. [Finance](#subsec4-3)
 6. [Findings and Conclusion](#conc)
+    1. [Conclusion](#subsec5-1)
 7. [About the Team](#about)
 
 ## Introduction  <a name="introduction"></a>
@@ -271,6 +272,10 @@ Now that I created that dataset, I trained our model that we used before on all 
 ![](pics/random_predictions.png)
 <br><br>
 
+### Conclusion <a name="subsec5-1"></a>
+
+Finally, these results show that **employment in the manufacturing industry is the most resistant to economic changes**, since it has the lowest R<sup>2</sup>. Since we weren’t able to predict it very accurately, it means that the three leading variables that we chose (S&P500 return, change in GDP, and CPI) may not impact the unemployment rate in the manufacturing industry significantly. There may be other variables that impact it more. **The construction and finance industries change more as a result of changes in these variables**, and are therefore more reactive to economic changes since they have higher R<sup>2</sup>’s. Because we were able to predict them fairly accurately, it shows that the leading variables likely have a stronger impact on the unemployment rates as compared to the manufacturing industry.
+
 ## About the team <a name="about"></a>
 
 <img src="pics/IMG_7083 (1).jpg" alt="Tim" width="300"/>
@@ -285,7 +290,3 @@ Tom is a junior at Lehigh studying finance and supply chain management.
 <br>
 Christyan is a senior at Lehigh studying finance.
 <br><br>
-
-## More 
-
-To view the GitHub repo for this website, click [here](https://github.com/donbowen/teamproject).
