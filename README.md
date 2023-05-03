@@ -11,12 +11,10 @@ To see the complete project repo, click [here](https://github.com/tdip19/FinalPr
     1. [Industry Choices](#subsec1-1)
     2. [Variables Chosen](#subsec1-2)
 2. [Methodology](#meth)
-3. [Section 1](#section2)
-    1. [Subsection](#subsec2-1)
-    2. [Subsection](#subsec2-2)
-4. [Section 1](#section3)
-    1. [Subsection](#subsec3-1)
-    2. [Subsection](#subsec3-2)
+3. [Regression Analysis](#section2)
+4. [Machine Learning Analysis](#section3)
+    1. [ML Method 1](#subsec3-1)
+    2. [ML Method 2](#subsec3-2)
 5. [Visualizations and Analysis](#section4)
     1. [Construction](#subsec4-1)
     2. [Manufacturing](#subsec4-2)
@@ -88,20 +86,11 @@ The coefficients of the unemployment rates are all negative, but not all of them
 
 The R-squared values are low in all four regressions, indicating that the unemployment rates explain only a small portion of the variation in CPI.
 
- A one percent increase in construction unemployment rate led to a -.2346 decrease in CPI. While a one percent increase in manufacturing unemployment rate led to a -.2673 decrease in CPI. With a one percent increase in finance unemployment rate leading to a -.2990 decrease in CPI.
-
-### Subsection 1 <a name="subsec2-1"></a>
-This is a subsection, formatted in heading 3 style
-
-### Subsection 2 <a name="subsec2-2"></a>
-This is a subsection, formatted in heading 3 style
+A one percent increase in construction unemployment rate led to a -.2346 decrease in CPI. While a one percent increase in manufacturing unemployment rate led to a -.2673 decrease in CPI. With a one percent increase in finance unemployment rate leading to a -.2990 decrease in CPI.
 
 ## Machine Learning Analysis <a name="section3"></a>
 
 To further analyze the relationship on economic indicators to industry unemployment, we employed different methods of machine learning. Our goal was to train a model to most accurately predict a given level of unemployment in an industry based on certain economic conditions. 
-
- 
-
 
 ### "ML" Method 1: <a name="subsec3-1"></a>
 For our first attempt, we created a model that attempts to place a value based on the line best fit using the three variables. 
@@ -184,9 +173,6 @@ This model gave us a much better estimate of unemployment by industry. The highe
 | Construction | 0.8545 |
 | Manufacturing | 0.5891 |
 | Finance | 0.7938 |
-
-
-
 
 ## Plots and Visualization <a name="section4"></a>
 
