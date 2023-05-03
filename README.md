@@ -39,6 +39,11 @@ The main goal of this project is to explore how we can use past data on industry
 
 ### Variables chosen: <a name="#subsec1-2"></a>
 
+**S&P 500 Returns:**  The S&P 500 (SP500) is a stock market index that measures the performance of 500 large companies listed on stock exchanges in the United States. It can be used as a proxy for economic health while providing insight into how the stock market is responding to economic trends. Because it is such a widely used indicator in finance for the performance of our economy, we felt it was fitting. Our SP500 figures are the total percentage of returns over the quarter. 
+
+**GDP:** Gross Domestic Product (GDP) measures the growth and contraction of the economy. When GDP is increasing, it generally indicates that more goods and services are being produced, which can lead to increased employment opportunities. Therefore, a positive percent change in GDP may lead to lower unemployment rates. We chose percent changes rather than the GDP number to better reflect small changes in the figure over each quarter. We also thought that GDP would be specifically helpful in predicting Manufacturing and Construction employment trends. 
+
+**CPI:** The Consumer Price Index (CPI) is a measure of inflation, which reflects the change in the price level of a basket of goods and services purchased by households over time. If the CPI is rising, it can indicate an increase in the cost of living, which may impact consumer spending, business investment, and job creation. Therefore, we thought while being a good indicator of economic health, changes may have an impact on unemployment. 
 
 
 ## Methodology <a name="meth"></a>
