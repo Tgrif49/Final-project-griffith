@@ -9,7 +9,7 @@ To see the complete project repo, click [here](https://github.com/tdip19/FinalPr
 ## Table of contents
 1. [Introduction](#introduction)
     1. [Industry Choices](#subsec1-1)
-    2. [Variables Chosen](#subsec1-2)
+    2. [Variable Choices](#subsec1-2)
 2. [Methodology](#meth)
 3. [Regression Analysis](#section2)
 4. [Machine Learning Analysis](#section3)
@@ -27,7 +27,7 @@ To see the complete project repo, click [here](https://github.com/tdip19/FinalPr
 
 The main goal of this project is to explore how we can use past data on industry trends and leading indicators to predict future employment and economic trends. We chose to explore this topic because, as we and our peers begin to move into the working world, we believe it is important to understand unemployment as it relates to job security. Especially now with many people predicting a recession, we think it is important to understand the employment trends in popular industries as they relate to economic trends.
 
-### Why we chose these industries: <a name="#subsec1-1"></a>
+### Industry Choices: <a name="#subsec1-1"></a>
 
 **Construction:** This was the inspiration for this project. While exploring topics, Tom stumbled upon this [video](https://www.youtube.com/watch?v=roEljzOKk3I&ab_channel=EPBResearch), detailing how the constuction employment is a significant driver of recessions in the US economy. We originally wanted to explore how different industries drive recessions, but we later decided to switch the angle in which we approached the project, instead researching how economic conditions affect unemployment in different industries. We felt that we should keep the construction industry as a homage to our original inspiration for the project.
 
@@ -35,7 +35,7 @@ The main goal of this project is to explore how we can use past data on industry
 
 **Finance:** This one is pretty clear. Since this is a finance class, most of us students are finance majors, and will likely be entering the finance industry soon. Therefore, it is important to understand the potential impact that economic conditions will have on employment rates.
 
-### Variables chosen: <a name="#subsec1-2"></a>
+### Variable choices: <a name="#subsec1-2"></a>
 
 **S&P 500 Returns:**  The S&P 500 (SP500) is a stock market index that measures the performance of 500 large companies listed on stock exchanges in the United States. It can be used as a proxy for economic health while providing insight into how the stock market is responding to economic trends. Because it is such a widely used indicator in finance for the performance of our economy, we felt it was fitting. Our SP500 figures are the total percentage of returns over the quarter. 
 
