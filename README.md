@@ -54,28 +54,6 @@ Then, we were able to complete the minimal cleaning of the data so it was ready 
 
 ![](pics/Merged_df.png)
 <br><br>
-Some analysis here
-
-Here is some code that we used to develop our analysis. Blah Blah. [More details are provided in the Appendix](page2).
- 
-Note that for the purposes of the website, you have to copy this code into the markdown file and  
-put the code inside trip backticks with the keyword `python`.
-
-```python
-import seaborn as sns 
-iris = sns.load_dataset('iris') 
-
-print(iris.head(),  '\n---')
-print(iris.tail(),  '\n---')
-print(iris.columns, '\n---')
-print("The shape is: ",iris.shape, '\n---')
-print("Info:",iris.info(), '\n---') # memory usage, name, dtype, and # of non-null obs (--> # of missing obs) per variable
-print(iris.describe(), '\n---') # summary stats, and you can customize the list!
-print(iris['species'].value_counts()[:10], '\n---')
-print(iris['species'].nunique(), '\n---')
-```
-
-Notice that the output does NOT show! **You have to copy in figures and tables from the notebooks.**
 
 ## Regression Analysis <a name="section2"></a>
 Christyan
