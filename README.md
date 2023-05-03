@@ -29,9 +29,9 @@ The main goal of this project is to explore how we can use past data on industry
 
 ### Industry Choices: <a name="#subsec1-1"></a>
 
-**Construction:** This was the inspiration for this project. While exploring topics, Tom stumbled upon this [video](https://www.youtube.com/watch?v=roEljzOKk3I&ab_channel=EPBResearch), detailing how the constuction employment is a significant driver of recessions in the US economy. We originally wanted to explore how different industries drive recessions, but we later decided to switch the angle in which we approached the project, instead researching how economic conditions affect unemployment in different industries. We felt that we should keep the construction industry as a homage to our original inspiration for the project.
+**Construction:** This was the inspiration for this project. While exploring topics, Tom stumbled upon this [video](https://www.youtube.com/watch?v=roEljzOKk3I&ab_channel=EPBResearch), detailing how construction employment is a significant driver of recessions in the US economy. We originally wanted to explore how different industries drive recessions, but we later decided to switch the angle in which we approached the project, instead of researching how economic conditions affect unemployment in different industries. We felt that we should keep the construction industry as a homage to our original inspiration for the project.
 
-**Manufacturing:** As supply chain majors, the manufaturing industy is important to Tim and Tom. Additionally, it is an industry that is very relevant to recent and soon-to-be Lehigh graduates overall.
+**Manufacturing:** As supply chain majors, the manufacturing industy is important to Tim and Tom. Additionally, it is an industry that is very relevant to recent and soon-to-be Lehigh graduates overall.
 
 **Finance:** This one is pretty clear. Since this is a finance class, most of us students are finance majors, and will likely be entering the finance industry soon. Therefore, it is important to understand the potential impact that economic conditions will have on employment rates.
 
@@ -46,7 +46,7 @@ The main goal of this project is to explore how we can use past data on industry
 
 ## Methodology <a name="meth"></a>
 
-We began by gathering data. We were able to find most of the employment data we needed from the Bureau of Labor Statistics and the Bureau of Economic Analysis. This was convient because, by getting the data from the same/similar sources, they were all formatted similarly. Therefore, there was minimal work needed to clean the data and prepare it for a merge.
+We began by gathering data. We were able to find most of the employment data we needed from the Bureau of Labor Statistics and the Bureau of Economic Analysis. This was convinient because, by getting the data from the same/similar sources, they were all formatted similarly. Therefore, there was minimal work needed to clean the data and prepare it for a merge.
 
 Then, we were able to complete the minimal cleaning of the data so it was ready to merge, then merge it. The merged dataframe can be seen below.
 
@@ -54,11 +54,11 @@ Then, we were able to complete the minimal cleaning of the data so it was ready 
 <br><br>
 
 ## Regression Analysis <a name="section2"></a>
-Before we begun analyzing the regression models, we thought it was important to first visualize the data. We set up our financial metrics (S&P500 Returns, CPI, and GDP Percent Change) as our Y variable and the unemployment rates (Construction, Finance, and Manufacturing) as our X variable.   
+Before we began analyzing the regression models, we thought it was important to first visualize the data. We set up our financial metrics (S&P500 Returns, CPI, and GDP Percent Change) as our Y variable and the unemployment rates (Construction, Finance, and Manufacturing) as our X variable.   
 <br><br>
 ![](pics/SP500_Reg.png)
 <br><br>
-We noticed that all three X variables had a slight positive relation with the S&P 500 returns. However, this relationship was not strong enough to establish a statistically significant correlation between the three variables. 
+We noticed that all three X variables had a slight positive relationship with the S&P 500 returns. However, this relationship was not strong enough to establish a statistically significant correlation between the three variables. 
 <br><br>
 ![](pics/GDP_Reg.png)
 <br><br>
@@ -66,7 +66,7 @@ The same could be said when looking at the relationship between GDP Percent Chan
 <br><br>
 ![](pics/CPI_regplot.png)
 <br><br>
-When looking at each sectors unemployment rates compared to CPI, we noticed a strong negative relationship. We analyzed that a strong negative relationship between unemployment rates and CPI could possibly suggest that as unemployment rates decrease, CPI tends to increase. 
+When looking at each sectors' unemployment rates compared to CPI, we noticed a strong negative relationship. We analyzed that a strong negative relationship between unemployment rates and CPI could possibly suggest that as unemployment rates decrease, CPI tends to increase. 
 
 After examining each data visualization, we decided to further analyze each relationship by using OLS regression models. By fitting an OLS regression model, we could estimate the strength and direction of the relationship between the dependent variable (the financial metrics) and the log of each independent variable (industry unemployment rate). 
 <br><br>
@@ -78,7 +78,7 @@ A one percent increase in the construction unemployment rate led to a .0002 incr
 <br><br>
 ![](pics/Log_GDP.png)
 <br><br>
-The R-squared and the adjusted R-squared were also relatively low when looking at the relationship between GDP and each sector's unemployment rate. A one percent increase in construction unemployment rate led to a -.0172 decrease in GDP Percent Change. While a one percent increase in manufacturing unemployment rate led to a -.0197 decrease in GDP Percent Change. With a one percent increase in finance unemployment rate leading to a -.0163 decrease in GDP Percent Change.
+The R-squared and the adjusted R-squared were also relatively low when looking at the relationship between GDP and each sector's unemployment rate. A one percent increase in the construction unemployment rate led to a -.0172 decrease in GDP Percent Change. While a one percent increase in the manufacturing unemployment rate led to a -.0197 decrease in GDP Percent Change. Q one percent increase in finance unemployment rate led to a -.0163 decrease in GDP Percent Change.
 <br><br>
 ![](pics/Log_CPI.png)
 <br><br>
@@ -86,11 +86,11 @@ The coefficients of the unemployment rates are all negative, but not all of them
 
 The R-squared values are low in all four regressions, indicating that the unemployment rates explain only a small portion of the variation in CPI.
 
-A one percent increase in construction unemployment rate led to a -.2346 decrease in CPI. While a one percent increase in manufacturing unemployment rate led to a -.2673 decrease in CPI. With a one percent increase in finance unemployment rate leading to a -.2990 decrease in CPI.
+A one percent increase in the construction unemployment rate led to a -.2346 decrease in CPI. While a one percent increase in the manufacturing unemployment rate led to a -.2673 decrease in CPI. A one percent increase in finance unemployment rate led to a -.2990 decrease in CPI.
 
 ## Machine Learning Analysis <a name="section3"></a>
 
-To further analyze the relationship on economic indicators to industry unemployment, we employed different methods of machine learning. Our goal was to train a model to most accurately predict a given level of unemployment in an industry based on certain economic conditions. 
+To further analyze the relationship between economic indicators and industry unemployment, we employed different methods of machine learning. Our goal was to train a model to most accurately predict a given level of unemployment in an industry based on certain economic conditions. 
 
 ### "ML" Method 1: <a name="subsec3-1"></a>
 For our first attempt, we created a model that attempts to place a value based on the line best fit using the three variables. 
@@ -166,7 +166,7 @@ print(y_pred_c)
 len(X_train_c)
 ``` 
 
-This model gave us a much better estimate of unemployment by industry. The highest R<sup>2</sup> was for construction, which supported our intial idea that the construction industry is heavily tied to economic indicators. 
+This model gave us a much better estimate of unemployment by industry. The highest R<sup>2</sup> was for construction, which supported our initial idea that the construction industry is heavily tied to economic indicators. 
 
 | Industry | R<sup>2</sup> |
 |:--------:|:-------------:|
@@ -190,7 +190,7 @@ This plot overlays our predicted values for the unemployment (orange) with the a
 <br><br>
 ![](pics/residual_constr.png)
 <br><br>
-This plot shows how far our predicted values for the unemployment deviate from the actual values in the dataset, with the red line representing 0, or no deviation from eachother. This plot is useful because it additionally colors the points by the timeframe, so we can see which timeframes we predicted more accurately than others.
+This plot shows how far our predicted values for the unemployment deviate from the actual values in the dataset, with the red line representing 0, or no deviation from each other. This plot is useful because it additionally colors the points by the timeframe, so we can see which timeframes we predicted more accurately than others.
 
 ### Manufacturing <a name="subsec4-2"></a>
 
@@ -204,7 +204,7 @@ This plot overlays our predicted values for the unemployment (orange) with the a
 <br><br>
 ![](pics/residual_manuf.png)
 <br><br>
-This plot shows how far our predicted values for the unemployment deviate from the actual values in the dataset, with the red line representing 0, or no deviation from eachother. This plot is useful because it additionally colors the points by the timeframe, so we can see which timeframes we predicted more accurately than others.
+This plot shows how far our predicted values for the unemployment deviate from the actual values in the dataset, with the red line representing 0, or no deviation from each other. This plot is useful because it additionally colors the points by the timeframe, so we can see which timeframes we predicted more accurately than others.
 
 ### Finance <a name="subsec4-3"></a>
 
@@ -218,7 +218,7 @@ This plot overlays our predicted values for the unemployment (orange) with the a
 <br><br>
 ![](pics/residual_fin.png)
 <br><br>
-This plot shows how far our predicted values for the unemployment deviate from the actual values in the dataset, with the red line representing 0, or no deviation from eachother. This plot is useful because it additionally colors the points by the timeframe, so we can see which timeframes we predicted more accurately than others.
+This plot shows how far our predicted values for the unemployment deviate from the actual values in the dataset, with the red line representing 0, or no deviation from each other. This plot is useful because it additionally colors the points by the timeframe, so we can see which timeframes we predicted more accurately than others.
 
 ## Findings and Conclusion <a name="conc"></a>
 
@@ -275,7 +275,7 @@ Now that I created that dataset, I trained our model that we used before on all 
 
 ### Conclusion <a name="subsec5-1"></a>
 
-Finally, these results show that **employment in the manufacturing industry is the most resistant to economic changes**, since it has the lowest R<sup>2</sup>. Since we weren’t able to predict it very accurately, it means that the three leading variables that we chose (S&P500 return, change in GDP, and CPI) may not impact the unemployment rate in the manufacturing industry significantly. There may be other variables that impact it more. **The construction and finance industries change more as a result of changes in these variables**, and are therefore more reactive to economic changes since they have higher R<sup>2</sup>’s. Because we were able to predict them fairly accurately, it shows that the leading variables likely have a stronger impact on the unemployment rates as compared to the manufacturing industry.
+Finally, these results show that **employment in the manufacturing industry is the most resistant to economic changes** since it has the lowest R<sup>2</sup>. Since we weren’t able to predict it very accurately, it means that the three leading variables that we chose (S&P500 return, change in GDP, and CPI) may not impact the unemployment rate in the manufacturing industry significantly. There may be other variables that impact it more. **The construction and finance industries change more as a result of changes in these variables** and are therefore more reactive to economic changes since they have higher R<sup>2</sup>s. Because we were able to predict them fairly accurately, it shows that the leading variables likely have a stronger impact on the unemployment rates as compared to the manufacturing industry.
 
 ## About the team <a name="about"></a>
 
