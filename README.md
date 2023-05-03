@@ -56,7 +56,39 @@ Then, we were able to complete the minimal cleaning of the data so it was ready 
 <br><br>
 
 ## Regression Analysis <a name="section2"></a>
-Christyan
+Before we begun analyzing the regression models, we thought it was important to first visualize the data. We set up our financial metrics (S&P500 Returns, CPI, and GDP Percent Change) as our Y variable and the unemployment rates (Construction, Finance, and Manufacturing) as our X variable.   
+<br><br>
+![](pics/SP500_Reg.png)
+<br><br>
+We noticed that all three X variables had a slight positive relation with the S&P 500 returns. However, this relationship was not strong enough to establish a statistically significant correlation between the three variables. 
+<br><br>
+![](pics/GDP_Reg.png)
+<br><br>
+The same could be said when looking at the relationship between GDP Percent Change and the three unemployment rates. There is a slight negative relationship between the three variables. Similar to the previous graph, there isn't a strong relationship between the variables to infer that the graph contains any statistically significant correlation.
+<br><br>
+![](pics/CPI_regplot.png)
+<br><br>
+When looking at each sectors unemployment rates compared to CPI, we noticed a strong negative relationship. We analyzed that a strong negative relationship between unemployment rates and CPI could possibly suggest that as unemployment rates decrease, CPI tends to increase. 
+
+After examining each data visualization, we decided to further analyze each relationship by using OLS regression models. By fitting an OLS regression model, we could estimate the strength and direction of the relationship between the dependent variable (the financial metrics) and the log of each independent variable (industry unemployment rate). 
+<br><br>
+![](pics/Log_SP.png)
+<br><br>
+In all four models, we noticed the R-squared values were relatively low, ranging from 0.01 to 0.05. This suggests that the independent variables included in the models do not explain a large proportion of the variation in the S&P 500 returns. The adjusted R-squared values are even lower, suggesting that the independent variables may not be good predictors of the S&P 500 returns. 
+
+A one percent increase in the construction unemployment rate led to a .0002 increase in the S&P500 return value. Whereas a one percent increase in the manufacturing unemployment rate led to a .0003 increase in the S&P500 returns. Finally, a one percent increase in the finance unemployment rate led to a .0002 increase in the S&P500 returns.
+<br><br>
+![](pics/Log_GDP.png)
+<br><br>
+The R-squared and the adjusted R-squared were also relatively low when looking at the relationship between GDP and each sector's unemployment rate. A one percent increase in construction unemployment rate led to a -.0172 decrease in GDP Percent Change. While a one percent increase in manufacturing unemployment rate led to a -.0197 decrease in GDP Percent Change. With a one percent increase in finance unemployment rate leading to a -.0163 decrease in GDP Percent Change.
+<br><br>
+![](pics/Log_CPI.png)
+<br><br>
+The coefficients of the unemployment rates are all negative, but not all of them are statistically significant at conventional levels. The coefficient of Construction_Unemployment_Rate is statistically significant at the 1% level, which suggests that an increase in the Construction unemployment rate is associated with a decrease in CPI. The coefficient of Finance_Unemployment_Rate is statistically significant at the 5% level, which suggests that an increase in the Finance unemployment rate is associated with a decrease in CPI. However, the coefficient of Manufacturing_Unemployment_Rate is not statistically significant, which suggests that there is no evidence of a significant relationship between this variable and CPI.
+
+The R-squared values are low in all four regressions, indicating that the unemployment rates explain only a small portion of the variation in CPI.
+
+ A one percent increase in construction unemployment rate led to a -.2346 decrease in CPI. While a one percent increase in manufacturing unemployment rate led to a -.2673 decrease in CPI. With a one percent increase in finance unemployment rate leading to a -.2990 decrease in CPI.
 
 ### Subsection 1 <a name="subsec2-1"></a>
 This is a subsection, formatted in heading 3 style
