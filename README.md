@@ -78,7 +78,7 @@ A one percent increase in the construction unemployment rate led to a .0002 incr
 <br><br>
 ![](pics/Log_GDP.png)
 <br><br>
-The R-squared and the adjusted R-squared were also relatively low when looking at the relationship between GDP and each sector's unemployment rate. A one percent increase in the construction unemployment rate led to a -.0172 decrease in GDP Percent Change. While a one percent increase in the manufacturing unemployment rate led to a -.0197 decrease in GDP Percent Change. Q one percent increase in finance unemployment rate led to a -.0163 decrease in GDP Percent Change.
+The R-squared and the adjusted R-squared were also relatively low when looking at the relationship between GDP and each sector's unemployment rate. A one percent increase in the construction unemployment rate led to a -.0172 decrease in GDP Percent Change. While a one percent increase in the manufacturing unemployment rate led to a -.0197 decrease in GDP Percent Change. Q one percent increase in finance unemployment rate led to a -.0130 decrease in GDP Percent Change.
 <br><br>
 ![](pics/Log_CPI.png)
 <br><br>
