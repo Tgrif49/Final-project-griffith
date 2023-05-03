@@ -9,6 +9,7 @@ To see the complete project repo, click [here](https://github.com/tdip19/FinalPr
 ## Table of contents
 1. [Introduction](#introduction)
     1. [Industry Choices](#subsec1-1)
+    2. [Variables Chosen](#subsec1-2)
 2. [Methodology](#meth)
 3. [Section 1](#section2)
     1. [Subsection](#subsec2-1)
@@ -27,13 +28,17 @@ To see the complete project repo, click [here](https://github.com/tdip19/FinalPr
 
 The main goal of this project is to explore how we can use past data on industry trends and leading indicators to predict future employment and economic trends. We chose to explore this topic because, as we and our peers begin to move into the working world, we believe it is important to understand unemployment as it relates to job security. Especially now with many people predicting a recession, we think it is important to understand the employment trends in popular industries as they relate to economic trends.
 
-### Why we chose these industries: <a name="industries"></a>
+### Why we chose these industries: <a name="#subsec1-1"></a>
 
 **Construction:** This was the inspiration for this project. While exploring topics, Tom stumbled upon this [video](https://www.youtube.com/watch?v=roEljzOKk3I&ab_channel=EPBResearch), detailing how the constuction employment is a significant driver of recessions in the US economy. We originally wanted to explore how different industries drive recessions, but we later decided to switch the angle in which we approached the project, instead researching how economic conditions affect unemployment in different industries. We felt that we should keep the construction industry as a homage to our original inspiration for the project.
 
 **Manufacturing:** As supply chain majors, the manufaturing industy is important to Tim and Tom. Additionally, it is an industry that is very relevant to recent and soon-to-be Lehigh graduates overall.
 
 **Finance:** This one is pretty clear. Since this is a finance class, most of us students are finance majors, and will likely be entering the finance industry soon. Therefore, it is important to understand the potential impact that economic conditions will have on employment rates.
+
+### Variables chosen: <a name="#subsec1-2"></a>
+
+
 
 ## Methodology <a name="meth"></a>
 
