@@ -50,7 +50,7 @@ We began by gathering data. We were able to find most of the employment data we 
 
 Then, we were able to complete the minimal cleaning of the data so it was ready to merge, then merge it. The merged dataframe can be seen below.
 
-![](pics/Screen Shot 2023-05-02 at 11.52.06 PM.png)
+![](pics/graph_377.png)
 <br><br>
 
 ## Regression Analysis <a name="section2"></a>
